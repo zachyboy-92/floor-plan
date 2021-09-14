@@ -1,0 +1,79 @@
+* {
+  box-sizing: border-box;
+  margin: 0;
+  padding: 0;
+}
+
+.App {
+  margin: 10%;
+}
+
+.floorplan-container {
+  height: 70vh;
+  padding: 10% 10%;
+}
+
+.floorplan-container {
+  display: grid;
+  grid-template-columns: repeat(8, 1fr);
+  grid-template-rows: repeat(7, 1fr);
+  margin: 5px;
+  color: white;
+}
+
+.bedroom-one {
+  grid-column: 1 / span 3;
+  grid-row: 1 / span 2;
+  background-color: rgb(16, 84, 138);
+}
+
+.bedroom-two {
+  grid-column: 1 / span 4;
+  grid-row: 5 / span 3;
+  background-color: rgb(16, 84, 138);
+}
+
+.bedroom-three {
+  grid-column: 6 / span 4;
+  grid-row: 5 / span 3;
+  background-color: rgb(16, 84, 138);
+}
+
+.living-room {
+  grid-column: 4 / span 3;
+  grid-row: 1 / span 4;
+  background-color: tan;
+}
+
+.full-bath {
+  grid-column: 1 / span 3;
+  grid-row: 3 / span 2;
+  background-color: olive;
+}
+
+.half-bath {
+  grid-column: 5 / span 1;
+  grid-row: 5 / span 3;
+  background-color: olive;
+}
+
+.kitchen {
+  grid-column: 7 / span 2;
+  grid-row: 1 / span 4;
+  background-color: orange;
+}
+
+.oven {
+  width: 50%;
+  background-color: orangered;
+}
+
+.sink {
+  width: 50%;
+  background-color: sienna;
+}
+
+.kitchen-equipment {
+  display: flex;
+  height: 5vh;
+}
